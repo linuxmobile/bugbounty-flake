@@ -12,7 +12,12 @@
     flake-utils,
   }:
     flake-utils.lib.eachDefaultSystem (system: let
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs {
+        inherit system;
+        config = {
+          allowUnfree = true;
+        };
+      };
 
       modules = import ./modules {
         inherit pkgs system;
@@ -23,13 +28,17 @@
           [
             zellij
           ]
-          ++ modules.packages.recon
-          ++ modules.packages.exploit
-          ++ modules.packages.webTools
+          ++ modules.packages.reconnaissance
+          ++ modules.packages.vulnScanning
+          ++ modules.packages.webProxies
+          ++ modules.packages.apiTesting
+          ++ modules.packages.networkAnalysis
+          ++ modules.packages.contentDiscovery
+          ++ modules.packages.codeAnalysis
           ++ modules.scripts;
 
         shellHook = ''
-          export ZELLIJ_CONFIG_FILE=${modules.software.zellijConfig}
+          export ZELLIJ_CONFIG_FILE=${modules.software.zellijConfig.config}
 
           echo "🎯 Bug Bounty Environment Loaded!"
         '';

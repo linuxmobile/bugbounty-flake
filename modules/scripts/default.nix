@@ -1,6 +1,9 @@
 {pkgs}: let
-  # Import your custom scripts here
-  # Example: script1 = import ./script1.nix { inherit pkgs; };
+  reconScript = import ./recon.nix {inherit pkgs;};
+  scanScript = import ./scan.nix {inherit pkgs;};
+  setupScript = import ./setup.nix {inherit pkgs;};
 in [
-  # List your scripts here
+  reconScript
+  scanScript
+  setupScript
 ]

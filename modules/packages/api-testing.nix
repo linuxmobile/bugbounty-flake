@@ -1,5 +1,5 @@
 {pkgs}:
 with pkgs; [
-  postman
-  insomnia
+  postman    # Popular API testing and development platform
+  insomnia   # REST and GraphQL API testing client
 ]
