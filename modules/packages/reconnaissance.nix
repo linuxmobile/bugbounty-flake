@@ -10,4 +10,9 @@ with pkgs; [
   tlsx
   httpx
   whatweb
+  assetfinder
+  knockpy
+
+  # puredns
+  # findomain
 ]

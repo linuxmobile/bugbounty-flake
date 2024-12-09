@@ -10,4 +10,11 @@ with pkgs; [
   subjs
   jsluice
   meg
+  arjun
+  gf
+  qsreplace
+
+  # kxss
+  # paramspider
+  # waybackurls
 ]

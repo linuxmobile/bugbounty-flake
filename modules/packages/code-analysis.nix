@@ -4,4 +4,5 @@ with pkgs; [
   trufflehog
   hashcat
   john
+  semgrep
 ]

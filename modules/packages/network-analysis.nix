@@ -6,4 +6,8 @@ with pkgs; [
   s3scanner
   anew
   unfurl
+  netcat
+  socat
+  tcpdump
+  sslscan
 ]
