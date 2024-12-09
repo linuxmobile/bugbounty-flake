@@ -39,8 +39,10 @@
 
         shellHook = ''
           export ZELLIJ_CONFIG_FILE=${modules.software.zellijConfig.config}
+          export ZELLIJ_CONFIG_DIR=${modules.software.zellijConfig.layoutDir}
 
           echo "🎯 Bug Bounty Environment Loaded!"
+          echo "Run 'setup-bugbounty' to start the environment"
         '';
       };
 

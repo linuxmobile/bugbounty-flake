@@ -1,7 +1,6 @@
 {pkgs}: let
   zellijConfig = pkgs.writeText "zellij-config.kdl" ''
     theme "catppuccin-mocha"
-    default_layout "bug-bounty"
 
     ui {
         pane_frames false
@@ -40,17 +39,22 @@
         tab name="Recon" focus=true {
             pane split_direction="vertical" {
                 pane name="Recon Tools" size="60%" {
-                    command "bash"
+                    command "$SHELL"
+                    args "-l"
                 }
                 pane name="Results" {
-                    command "bash"
+                    command "$SHELL"
+                    args "-l"
                 }
             }
         }
 
         tab name="Web" {
             pane split_direction="vertical" {
-                pane name="Browser/Burp" size="60%"
+                pane name="Browser/Burp" size="60%" {
+                    command "$SHELL"
+                    args "-l"
+                }
                 pane name="Notes" {
                     command "nvim"
                     args "/tmp/bug-notes.md"
@@ -59,11 +63,20 @@
         }
 
         tab name="Shell" {
-            pane
+            pane {
+                command "$SHELL"
+                args "-l"
+            }
         }
     }
   '';
+
+  # Create a directory with the layout file
+  layoutDir = pkgs.runCommand "zellij-layouts" {} ''
+    mkdir -p $out/layouts
+    cp ${bugBountyLayout} $out/layouts/bug-bounty.kdl
+  '';
 in {
   config = zellijConfig;
-  layout = bugBountyLayout;
+  layoutDir = layoutDir;
 }
