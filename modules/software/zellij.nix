@@ -1,6 +1,22 @@
 {pkgs}: let
   zellijConfig = pkgs.writeText "zellij-config.kdl" ''
-    theme "gruvbox dark"
+    themes {
+        gruvbox-dark {
+            fg "#D5C4A1"
+            bg "#282828"
+            black "#3C3836"
+            red "#CC241D"
+            green "#98971A"
+            yellow "#D79921"
+            blue "#458588"
+            magenta "#B16286"
+            cyan "#689D6A"
+            white "#A89984"
+            orange "#D65D0E"
+        }
+    }
+
+    theme "gruvbox-dark"
 
     ui {
         pane_frames false
@@ -14,8 +30,11 @@
             bind "Alt k" { MoveFocus "Up"; }
             bind "Alt =" { Resize "Increase"; }
             bind "Alt -" { Resize "Decrease"; }
+            bind "Alt q" { Detach; }
         }
     }
+
+    on_force_close "detach"
 
     plugins {
         tab-bar { path "tab-bar"; }
