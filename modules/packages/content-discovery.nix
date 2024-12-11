@@ -13,6 +13,7 @@ with pkgs; [
   arjun        # HTTP parameter discovery suite
   gf           # Wrapper around grep for pre-defined patterns
   qsreplace    # Query string replacement tool
+  katana      # Crawling and spidering framework for web security testing
 
   # kxss         # Blind XSS injection tool
   # paramspider  # Mining parameters from dark corners of Web Archives

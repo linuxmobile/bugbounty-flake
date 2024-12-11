@@ -4,4 +4,5 @@ with pkgs; [
   wireshark   # Network protocol analyzer
   postman     # API development and testing platform
   insomnia    # REST and GraphQL API client
+  mitmproxy   # Interactive TLS-capable intercepting HTTP proxy
 ]

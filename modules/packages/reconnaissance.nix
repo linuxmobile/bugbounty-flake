@@ -12,6 +12,7 @@ with pkgs; [
   whatweb     # Next generation web scanner
   assetfinder # Find domains and subdomains
   knockpy     # Subdomain scanner
+  naabu       # Fast port scanner written in Go by ProjectDiscovery
 
   # puredns     # Fast domain resolver and subdomain bruteforcing
   # findomain   # Cross-platform subdomain enumerator

@@ -1,6 +1,6 @@
 {pkgs}: let
   zellijConfig = pkgs.writeText "zellij-config.kdl" ''
-    theme "catppuccin-mocha"
+    theme "gruvbox dark"
 
     ui {
         pane_frames false

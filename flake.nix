@@ -27,6 +27,14 @@
         buildInputs = with pkgs;
           [
             zellij
+            jq
+            ripgrep
+            skim
+            wget
+            parallel
+            go
+            python3
+
           ]
           ++ modules.packages.reconnaissance
           ++ modules.packages.vulnScanning
@@ -40,6 +48,7 @@
         shellHook = ''
           export ZELLIJ_CONFIG_FILE=${modules.software.zellijConfig.config}
           export ZELLIJ_CONFIG_DIR=${modules.software.zellijConfig.layoutDir}
+          export NUCLEI_TEMPLATES_PATH="${pkgs.nuclei-templates}/share/nuclei-templates"
 
           echo "🎯 Bug Bounty Environment Loaded!"
           echo "Run 'setup-bugbounty' to start the environment"
