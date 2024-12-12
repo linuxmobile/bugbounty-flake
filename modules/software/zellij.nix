@@ -18,9 +18,8 @@
 
     theme "gruvbox-dark"
 
-    ui {
-        pane_frames false
-    }
+    pane_frames false
+    copy_on_select false
 
     keybinds {
         normal {

@@ -26,8 +26,7 @@ pkgs.writeScriptBin "start-environment" ''
 
   # Function to start or attach to zellij session
   start_session() {
-    # First, disable mouse mode
-    ${pkgs.zellij}/bin/zellij options --disable-mouse-mode
+    ${pkgs.zellij}/bin/zellij
 
     # Check for existing session
     if ${pkgs.zellij}/bin/zellij list-sessions 2>/dev/null | grep -q "bugbounty"; then
