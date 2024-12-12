@@ -10,4 +10,5 @@ with pkgs; [
   socat       # Multipurpose relay tool
   tcpdump     # Network packet analyzer
   sslscan     # Test SSL/TLS enabled services
+  whois       # Query domain registration and ownership info
 ]
