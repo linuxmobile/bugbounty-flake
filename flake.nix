@@ -17,12 +17,17 @@
         config = {
           allowUnfree = true;
         };
+        overlays = [
+          (final: prev: import ./pkgs { pkgs = prev; })
+        ];
       };
 
       modules = import ./modules {
         inherit pkgs system;
       };
     in {
+      packages = import ./pkgs { inherit pkgs; };
+
       devShells.default = pkgs.mkShell {
         buildInputs = with pkgs;
           [

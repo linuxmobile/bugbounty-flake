@@ -14,6 +14,6 @@ with pkgs; [
   knockpy     # Subdomain scanner
   naabu       # Fast port scanner written in Go by ProjectDiscovery
 
-  # puredns     # Fast domain resolver and subdomain bruteforcing
+  puredns     # Fast domain resolver and subdomain bruteforcing
   # findomain   # Cross-platform subdomain enumerator
 ]

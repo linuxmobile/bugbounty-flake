@@ -1,4 +1,4 @@
-{pkgs}:
+{ pkgs }:
 with pkgs; [
   ffuf         # Fast web fuzzer for directory/file discovery
   feroxbuster  # Fast content discovery tool written in Rust
@@ -11,11 +11,10 @@ with pkgs; [
   jsluice      # Extract URLs, endpoints, and secrets from JavaScript
   meg          # Tool for fetching many paths for many hosts
   arjun        # HTTP parameter discovery suite
-  gf           # Wrapper around grep for pre-defined patterns
   qsreplace    # Query string replacement tool
-  katana      # Crawling and spidering framework for web security testing
+  katana       # Crawling and spidering framework for web security testing
 
   # kxss         # Blind XSS injection tool
-  # paramspider  # Mining parameters from dark corners of Web Archives
-  # waybackurls  # Fetch URLs from Wayback Machine
+  paramspider  # Mining parameters from dark corners of Web Archives
+  waybackurls  # Fetch URLs from Wayback Machine
 ]
