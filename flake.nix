@@ -37,6 +37,7 @@
             skim
             wget
             parallel
+            moreutils
             go
             python3
           ]
