@@ -53,15 +53,6 @@
             export ZELLIJ_CONFIG_FILE=${modules.software.zellijConfig.config}
             export ZELLIJ_CONFIG_DIR=${modules.software.zellijConfig.layoutDir}
             export NUCLEI_TEMPLATES_PATH="${pkgs.nuclei-templates}/share/nuclei-templates"
-
-            # Start the environment if we're not already in a zellij session
-            if [ -z "$ZELLIJ" ]; then
-              echo "🎯 Starting Bug Bounty Environment..."
-              # Use exec to replace the current process with zellij
-              exec start-environment
-            else
-              echo "🎯 Bug Bounty Environment Loaded!"
-            fi
           '';
       };
 
