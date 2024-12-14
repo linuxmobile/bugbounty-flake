@@ -18,7 +18,7 @@
           allowUnfree = true;
         };
         overlays = [
-          (final: prev: import ./pkgs { pkgs = prev; })
+          (final: prev: import ./pkgs {pkgs = prev;})
         ];
       };
 
@@ -26,7 +26,7 @@
         inherit pkgs system;
       };
     in {
-      packages = import ./pkgs { inherit pkgs; };
+      packages = import ./pkgs {inherit pkgs;};
 
       devShells.default = pkgs.mkShell {
         buildInputs = with pkgs;
@@ -38,6 +38,7 @@
             wget
             parallel
             moreutils
+            inetutils
             go
             python3
           ]
@@ -50,11 +51,13 @@
           ++ modules.packages.codeAnalysis
           ++ modules.scripts;
 
-          shellHook = ''
-            export ZELLIJ_CONFIG_FILE=${modules.software.zellijConfig.config}
-            export ZELLIJ_CONFIG_DIR=${modules.software.zellijConfig.layoutDir}
-            export NUCLEI_TEMPLATES_PATH="${pkgs.nuclei-templates}/share/nuclei-templates"
-          '';
+        shellHook = ''
+          export ZELLIJ_CONFIG_FILE=${modules.software.zellijConfig.config}
+          export ZELLIJ_CONFIG_DIR=${modules.software.zellijConfig.layoutDir}
+          export NUCLEI_TEMPLATES_PATH="${pkgs.nuclei-templates}/share/nuclei-templates"
+          export WORDLISTS="${pkgs.wordlists}/share/wordlists"
+          export DIRBUSTER="${pkgs.dirbuster}/share/wordlists"
+        '';
       };
 
       inherit modules;
