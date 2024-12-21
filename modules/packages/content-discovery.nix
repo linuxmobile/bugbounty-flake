@@ -17,4 +17,5 @@ with pkgs; [
   # kxss         # Blind XSS injection tool
   paramspider  # Mining parameters from dark corners of Web Archives
   waybackurls  # Fetch URLs from Wayback Machine
+  dirbuster    # Java-based directory and file brute forcing tool
 ]
