@@ -54,9 +54,9 @@
         shellHook = ''
           export ZELLIJ_CONFIG_FILE=${modules.software.zellijConfig.config}
           export ZELLIJ_CONFIG_DIR=${modules.software.zellijConfig.layoutDir}
-          export NUCLEI_TEMPLATES_PATH="${pkgs.nuclei-templates}/share/nuclei-templates"
+          export NUCLEI_TEMPLATES="${pkgs.nuclei-templates}/share/nuclei-templates"
           export WORDLISTS="${pkgs.wordlists}/share/wordlists"
-          export DIRBUSTER="${pkgs.dirbuster}/share/wordlists"
+          export DIRBUSTER="${pkgs.dirbuster}/share/disbuster"
         '';
       };
 
