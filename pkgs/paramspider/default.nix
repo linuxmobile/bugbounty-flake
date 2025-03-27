@@ -10,8 +10,8 @@ python3Packages.buildPythonApplication rec {
   src = fetchFromGitHub {
     owner = "devanshbatham";
     repo = "ParamSpider";
-    rev = "v${version}";
-    sha256 = "sha256-tfk4cgpX+nXPb7N2qO1o6++d9R0El1NJVvklE+yGrrk=";
+    tag = "v${version}";
+    hash = "sha256-tfk4cgpX+nXPb7N2qO1o6++d9R0El1NJVvklE+yGrrk=";
   };
 
   propagatedBuildInputs = with python3Packages; [
@@ -27,7 +27,6 @@ python3Packages.buildPythonApplication rec {
     description = "Mining URLs from dark corners of Web Archives for bug hunting/fuzzing/further probing";
     homepage = "https://github.com/devanshbatham/ParamSpider";
     license = licenses.mit;
-    maintainers = with maintainers; [];
     platforms = platforms.all;
   };
 }
