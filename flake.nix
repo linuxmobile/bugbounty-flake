@@ -57,6 +57,9 @@
           export NUCLEI_TEMPLATES="${pkgs.nuclei-templates}/share/nuclei-templates"
           export WORDLISTS="${pkgs.wordlists}/share/wordlists"
           export DIRBUSTER="${pkgs.dirbuster}/share/disbuster"
+
+          mkdir -p temp
+          echo "Created temporary workspace directory at ./temp"
         '';
       };
 
