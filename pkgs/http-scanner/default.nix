@@ -10,7 +10,7 @@ buildGoModule rec {
   src = fetchFromGitHub {
     owner = "aymaneallaoui";
     repo = "kafka-http-scanner";
-    tag = "v${version}";
+    tag = "${version}";
     hash = "sha256-+8UpdNRuu0nTYiBBS+yiVwDEtC/KpEeyPCEeJvsjxfs=";
   };
 

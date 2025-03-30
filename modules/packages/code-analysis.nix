@@ -1,9 +1,15 @@
 {pkgs}:
 with pkgs; [
-  gitleaks # Scan git repos for secrets and keys
-  hashcat # Advanced password recovery and cracking tool
+  # Secret Scanning
+  gitleaks # Git repo secret scanner
+  trufflehog # Advanced secret scanner
+
+  # Static Analysis
+  semgrep # Static analysis tool
+
+  # Password Tools
+  hashcat # Password recovery tool
   john # John the Ripper password cracker
+  hashid # Identify hash types
   medusa # Parallel network authentication brute-forcing tool
-  semgrep # Static analysis tool for finding bugs and vulnerabilities
-  trufflehog # Advanced secret scanner with regex and entropy
 ]

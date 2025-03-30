@@ -1,21 +1,35 @@
 {pkgs}:
 with pkgs; [
-  ffuf # Fast web fuzzer for directory/file discovery
-  feroxbuster # Fast content discovery tool written in Rust
+  # Directory and File Brute Forcing
+  ffuf # Fast web fuzzer
+  feroxbuster # Fast content discovery tool
   gobuster # Directory/file & DNS busting tool
-  gospider # Fast web spider for discovering links and assets
-  hakrawler # Web crawler for gathering URLs and JavaScript files
-  gau # Get All URLs - Fetch known URLs from AlienVault's OTX
-  crlfuzz # Fast tool to scan CRLF vulnerability
-  subjs # Find JavaScript files from domains and URLs
-  jsluice # Extract URLs, endpoints, and secrets from JavaScript
-  meg # Tool for fetching many paths for many hosts
-  arjun # HTTP parameter discovery suite
-  qsreplace # Query string replacement tool
-  katana # Crawling and spidering framework for web security testing
+  dirb # Web content scanner
+  wfuzz # Web application fuzzer
 
-  # kxss         # Blind XSS injection tool
-  paramspider # Mining parameters from dark corners of Web Archives
-  waybackurls # Fetch URLs from Wayback Machine
-  dirbuster # Java-based directory and file brute forcing tool
+  # Web Crawling and Spidering
+  gospider # Fast web spider
+  hakrawler # Web crawler for URLs and JS files
+  katana # Advanced crawler and spider
+  meg # Fetch many paths for many hosts
+
+  # Parameter Discovery
+  # arjun           # HTTP parameter discovery suite - not in nixpkgs
+
+  # Javascript Analysis
+  subjs # Find JavaScript files from domains
+  jsluice # Extract URLs, endpoints from JavaScript
+  # xnlinkfinder    # JavaScript endpoint extractor - not in nixpkgs
+
+  # Historical Data
+  gau # Get All URLs from OTX, Wayback, etc.
+  # waybackurls     # Not in nixpkgs - fetch URLs from Wayback Machine
+
+  # Payload Injection and Testing
+  qsreplace # Query string replacement tool
+  crlfuzz # CRLF vulnerability scanner
+  kiterunner # API discovery tool
+
+  # Custom wordlists
+  seclists # Collection of security wordlists
 ]
