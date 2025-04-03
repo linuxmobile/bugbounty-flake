@@ -1,37 +1,49 @@
 {pkgs}:
 with pkgs; [
-  # DNS and Subdomain Enumeration
-  amass # Advanced subdomain enumeration
-  subfinder # Passive subdomain discovery
-  dnsx # Fast DNS toolkit
-  massdns # High-performance DNS stub resolver
-  puredns # Not in nixpkgs - fast domain resolver
-  assetfinder # Find domains and subdomains
-  # sublist3r # Fast subdomains enumeration tool
-  dnsrecon # DNS reconnaissance tool
-  fierce # DNS analysis tool
-  knockpy # Subdomain scanner
-  altdns # Subdomain discovery through permutations
+  # DNS & Subdomain Enumeration
+  amass
+  subfinder
+  dnsx
+  massdns
+  assetfinder
+  dnsrecon
+  fierce
+  knockpy
+  altdns
+  findomain
+  aiodnsbrute
+  dnstwist
+  dnsvalidator
+  subzerod
+  # subprober - this re write the httpx package
+  puredns
 
-  # Network Scanning
-  nmap # Network exploration and security auditing
-  masscan # TCP port scanner
-  rustscan # Modern port scanner
-  naabu # Fast port scanner
+  # Network Discovery
+  nmap
+  masscan
+  rustscan
+  naabu
+  arp-scan
+  zmap
 
   # Service Identification
-  tlsx # TLS grabber and analyzer
-  httpx # Fast HTTP probing
-  whatweb # Next generation web scanner
-  wafw00f # Web Application Firewall detector
+  tlsx
+  httpx
+  whatweb
+  wafw00f
+  wad
+  webanalyze
 
   # OSINT Tools
-  theharvester # Email, subdomain, and people names harvester
-  recon-ng # Web reconnaissance framework
+  theharvester
+  recon-ng
+  maigret
+  socialscan
+  # holehe - this re write the httpx package
+  urlhunter
+  metabigor
 
-  # Data Processing
-  gron # Make JSON greppable
-  jq # JSON processor
-  yq # YAML/XML processor
-  htmlq # Like jq but for HTML
+  # Historical Data
+  gau
+  waybackurls # not in nixpkgs
 ]

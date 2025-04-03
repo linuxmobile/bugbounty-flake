@@ -1,12 +1,22 @@
 {pkgs}:
 with pkgs; [
   # Proxies
-  mitmproxy # Interactive TLS-capable proxy
-  proxychains # Force TCP traffic through proxy
+  mitmproxy
+  proxychains
+  proxify
+
+  # Traffic Analysis
+  tcpdump
+  termshark
+  dsniff
+  netsniff-ng
+  ngrep
 
   # Request Manipulation
-  httpie # Modern HTTP client
-  curl # URL retrieval utility
-  hey # HTTP load testing tool
-  xh # Friendly HTTP client
+  httpie
+  curl
+  hey
+  xh
+  hurl
+  wuzz
 ]

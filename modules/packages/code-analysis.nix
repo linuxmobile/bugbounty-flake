@@ -1,15 +1,13 @@
 {pkgs}:
 with pkgs; [
-  # Secret Scanning
-  gitleaks # Git repo secret scanner
-  trufflehog # Advanced secret scanner
-
   # Static Analysis
-  semgrep # Static analysis tool
+  semgrep
+  osv-scanner
+  skjold
+  gokart
+  brakeman
 
-  # Password Tools
-  hashcat # Password recovery tool
-  john # John the Ripper password cracker
-  hashid # Identify hash types
-  medusa # Parallel network authentication brute-forcing tool
+  # Credential Detection
+  credential-detector
+  h8mail
 ]

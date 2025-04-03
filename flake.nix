@@ -53,6 +53,7 @@
               go
               python3
             ]
+            # Original modules
             ++ modules.packages.reconnaissance
             ++ modules.packages.vulnScanning
             ++ modules.packages.webProxies
@@ -60,6 +61,16 @@
             ++ modules.packages.networkAnalysis
             ++ modules.packages.contentDiscovery
             ++ modules.packages.codeAnalysis
+            # Additional modules
+            ++ modules.packages.passwordSecrets
+            ++ modules.packages.exploitation
+            ++ modules.packages.dataProcessing
+            ++ modules.packages.networkUtils
+            ++ modules.packages.fuzzing
+            ++ modules.packages.activeDirect
+            ++ modules.packages.cloudSecurity
+            ++ modules.packages.mobileSecurity
+            ++ modules.packages.forensics
             ++ modules.scripts;
 
           shellHook = ''
