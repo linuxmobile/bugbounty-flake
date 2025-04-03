@@ -4,5 +4,10 @@ with pkgs; [
   wfuzz
   radamsa
   regexploit
+  aflplusplus
+  # zzuf - package bricked
+  boofuzz
+  scout
+  ssdeep
   honggfuzz
 ]

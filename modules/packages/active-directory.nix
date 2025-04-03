@@ -5,4 +5,7 @@ with pkgs; [
   kerbrute
   lil-pwny
   # netexec - this re write the httpx package
+  breads-ad
+  certipy
+  gomapenum
 ]

@@ -5,4 +5,8 @@ with pkgs; [
   dex2jar
   # trueseeing - may have GUI dependencies
   apkeep
+  # scrcpy
+  simg2img
+  ghost
+  payload-dumper-go
 ]

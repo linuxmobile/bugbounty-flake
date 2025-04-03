@@ -6,6 +6,12 @@ with pkgs; [
   hashid
   nth
   phrasendrescher
+  brutespray
+  conpass
+  legba
+  nasty
+  # ncrack - package bricked
+  truecrack
 
   # Wordlist Generation
   crunch
@@ -19,4 +25,5 @@ with pkgs; [
   bomber-go
   deepsecrets
   tell-me-your-secrets
+  gitxray
 ]

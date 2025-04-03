@@ -5,4 +5,7 @@ with pkgs; [
   grype
   dockle
   dive
+  clair
+  cliam
+  fwanalyzer
 ]

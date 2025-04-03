@@ -58,7 +58,6 @@
             ++ modules.packages.vulnScanning
             ++ modules.packages.webProxies
             ++ modules.packages.apiTesting
-            ++ modules.packages.networkAnalysis
             ++ modules.packages.contentDiscovery
             ++ modules.packages.codeAnalysis
             # Additional modules
@@ -68,9 +67,11 @@
             ++ modules.packages.networkUtils
             ++ modules.packages.fuzzing
             ++ modules.packages.activeDirect
-            ++ modules.packages.cloudSecurity
-            ++ modules.packages.mobileSecurity
-            ++ modules.packages.forensics
+            ++ modules.packages.tunneling
+            ++ modules.packages.webScreenshot
+            # ++ modules.packages.cloudSecurity
+            # ++ modules.packages.mobileSecurity
+            # ++ modules.packages.forensics
             ++ modules.scripts;
 
           shellHook = ''

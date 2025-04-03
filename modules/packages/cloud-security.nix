@@ -6,6 +6,8 @@ with pkgs; [
   pacu
   cloudlist
   cliam
+  ec2stepshell
+  goblob
 
   # Azure
   azurehound
@@ -18,4 +20,7 @@ with pkgs; [
   yatas
   terrascan
   chain-bench
+  gcp-scanner
+  # poutine - package bricked
+  witness
 ]

@@ -17,6 +17,10 @@ with pkgs; [
   subzerod
   # subprober - this re write the httpx package
   puredns
+  mx-takeover
+  wtfis
+  dnsmon-go
+  dnstake
 
   # Network Discovery
   nmap
@@ -25,6 +29,9 @@ with pkgs; [
   naabu
   arp-scan
   zmap
+  das
+  udpx
+  sx-go
 
   # Service Identification
   tlsx
@@ -42,6 +49,9 @@ with pkgs; [
   # holehe - this re write the httpx package
   urlhunter
   metabigor
+  enumerepo
+  cloudbrute
+  # p0f - package bricked
 
   # Historical Data
   gau

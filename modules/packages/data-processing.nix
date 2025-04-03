@@ -6,5 +6,7 @@ with pkgs; [
   jq
   yq
   htmlq
+  cyberchef
+  ioccheck
   sttr
 ]

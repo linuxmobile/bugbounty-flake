@@ -4,6 +4,11 @@ with pkgs; [
   mitmproxy
   proxychains
   proxify
+  bettercap
+  ettercap
+  mubeng
+  redsocks
+  rshijack
 
   # Traffic Analysis
   tcpdump
@@ -19,4 +24,5 @@ with pkgs; [
   xh
   hurl
   wuzz
+  monsoon
 ]

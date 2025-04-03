@@ -4,4 +4,6 @@ with pkgs; [
   swaggerhole
   graphw00f
   wsrepl
+  graphqlmaker
+  clairvoyance
 ]

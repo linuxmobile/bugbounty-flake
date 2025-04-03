@@ -5,4 +5,7 @@ with pkgs; [
   kdigger
   popeye
   kubestroyer
+  kube-score
+  checkov
+  cirrusgo
 ]

@@ -9,16 +9,19 @@ with pkgs; [
   galer
   xcrawl3r
   paramspider
+  albedo
+  chopchop
+  uddup
 
   # Directory & File Brute Forcing
-  ffuf
   feroxbuster
   gobuster
   dirb
-  wfuzz
   cansina
   dontgo403
   nomore403
+  dirstalk
+  forbidden
 
   # JavaScript Analysis
   subjs
