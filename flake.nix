@@ -83,6 +83,10 @@
             export SECLISTS="${pkgs.seclists}/share/wordlists/seclists"
 
             mkdir -p temp
+            if [ -d temp ]; then
+              cd temp
+            fi
+
             echo "Created temporary workspace directory at ./temp"
           '';
         };
