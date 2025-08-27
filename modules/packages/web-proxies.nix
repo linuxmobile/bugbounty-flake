@@ -1,7 +1,7 @@
 {pkgs}:
 with pkgs; [
   # Proxies
-  mitmproxy
+  # mitmproxy
   proxychains
   proxify
   bettercap
@@ -22,7 +22,7 @@ with pkgs; [
   curl
   hey
   xh
-  hurl
+  # hurl
   wuzz
   monsoon
 ]

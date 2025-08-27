@@ -17,5 +17,5 @@ with pkgs; [
   gitjacker
   gitls
   legitify
-  pip-audit
+  # pip-audit
 ]

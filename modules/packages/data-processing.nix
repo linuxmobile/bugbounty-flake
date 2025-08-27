@@ -7,6 +7,5 @@ with pkgs; [
   yq
   htmlq
   cyberchef
-  ioccheck
   sttr
 ]

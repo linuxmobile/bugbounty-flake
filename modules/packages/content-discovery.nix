@@ -8,7 +8,6 @@ with pkgs; [
   photon
   galer
   xcrawl3r
-  paramspider
   albedo
   chopchop
   uddup

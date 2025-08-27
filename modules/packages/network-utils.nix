@@ -25,9 +25,9 @@ with pkgs; [
   mtr
   nload
   nuttcp
-  pingu
   rustcat
   sshping
+  netexec
 
   # Out-of-band Testing
   interactsh

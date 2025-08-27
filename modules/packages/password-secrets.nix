@@ -23,7 +23,6 @@ with pkgs; [
   detect-secrets
   whispers
   bomber-go
-  deepsecrets
   tell-me-your-secrets
   gitxray
 ]

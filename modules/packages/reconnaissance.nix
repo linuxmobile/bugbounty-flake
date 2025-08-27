@@ -16,7 +16,6 @@ with pkgs; [
   dnsvalidator
   subzerod
   # subprober - this re write the httpx package
-  puredns
   mx-takeover
   wtfis
   dnsmon-go
@@ -29,7 +28,7 @@ with pkgs; [
   naabu
   arp-scan
   zmap
-  das
+  # das
   udpx
   sx-go
 
