@@ -27,6 +27,7 @@
           inherit system;
           config = {
             allowUnfree = true;
+            segger-jlink.acceptLicense = true;
           };
           overlays = [
             (final: prev: import ./pkgs {pkgs = prev;})
@@ -53,41 +54,20 @@
               go
               python3
             ]
-            # Original modules
-            ++ modules.packages.reconnaissance
-            ++ modules.packages.vulnScanning
-            ++ modules.packages.webProxies
-            ++ modules.packages.apiTesting
-            ++ modules.packages.contentDiscovery
-            ++ modules.packages.codeAnalysis
-            # Additional modules
-            ++ modules.packages.passwordSecrets
-            ++ modules.packages.exploitation
-            ++ modules.packages.dataProcessing
-            ++ modules.packages.networkUtils
-            ++ modules.packages.fuzzing
-            ++ modules.packages.activeDirect
-            ++ modules.packages.tunneling
-            ++ modules.packages.webScreenshot
-            # ++ modules.packages.cloudSecurity
-            # ++ modules.packages.mobileSecurity
-            # ++ modules.packages.forensics
+            # All package modules automatically included
+            ++ builtins.attrValues modules.packages
             ++ modules.scripts;
 
           shellHook = ''
-            export ZELLIJ_CONFIG_FILE=${modules.software.zellijConfig.config}
-            export ZELLIJ_CONFIG_DIR=${modules.software.zellijConfig.layoutDir}
+
             export NUCLEI_TEMPLATES="${pkgs.nuclei-templates}/share/nuclei-templates"
             export WORDLISTS="${pkgs.wordlists}/share/wordlists"
             export DIRBUSTER="${pkgs.dirbuster}/share/dirbuster"
             export SECLISTS="${pkgs.seclists}/share/wordlists/seclists"
-
-            mkdir -p temp
-            if [ -d temp ]; then
-              cd temp
-            fi
-
-            echo "Created temporary workspace directory at ./temp"
+            export MEDIUM="${pkgs.seclists}/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt"
+            export SMALL="${pkgs.seclists}/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt"
+            export API="${pkgs.seclists}/share/wordlists/seclists/Discovery/Web-Content/api/api-endpoints-res.txt"
+            export ROCKYOU="${pkgs.wordlists}/share/wordlists/rockyou.txt"
           '';
         };
 

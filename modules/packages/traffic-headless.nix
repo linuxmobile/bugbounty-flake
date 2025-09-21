@@ -1,0 +1,19 @@
+{pkgs}:
+with pkgs; [
+  above
+  dhcpdump
+  dnstop
+  driftnet
+  goreplay
+  joincap
+  netsniff-ng
+  ngrep
+  secrets-extractor
+  sniffglue
+  tcpdump
+  tcpflow
+  tcpreplay
+  termshark
+  wireshark-cli
+  zeek
+]

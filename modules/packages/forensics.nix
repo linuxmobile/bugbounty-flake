@@ -1,23 +1,32 @@
+# Forensic tools
 {pkgs}:
 with pkgs; [
-  # Memory Analysis
-  volatility3
-  dismember
-
-  # File Analysis
-  exiv2
-  foremost
-  noseyparker
   afflib
-  # acquire - package bricked
+  amoco
+  acquire
+  dcfldd
   ddrescue
   dislocker
+  dismember
+  exiv2
   ext4magic
   extundelete
+  foremost
+  gef
+  gzrt
   hivex
   hstsparser
+  noseyparker
   ntfs3g
+  ntfsprogs
+  nwipe
   recoverjpeg
+  safecopy
   sleuthkit
+  srm
+  stegseek
   testdisk
+  volatility3
+  wipe
+  xorex
 ]

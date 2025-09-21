@@ -1,11 +1,14 @@
+# Kubernetes infrastructure
 {pkgs}:
 with pkgs; [
-  kubeaudit
-  kubescape
-  kdigger
-  popeye
-  kubestroyer
-  kube-score
-  checkov
+  cfripper
+  # checkov (isn't building)
   cirrusgo
+  kdigger
+  kube-hunter
+  kube-score
+  kubeaudit
+  kubestroyer
+  kubescape
+  popeye
 ]

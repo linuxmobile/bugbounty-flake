@@ -1,13 +1,14 @@
+# Tunneling tools
 {pkgs}:
 with pkgs; [
-  # Network Tunneling
   bore-cli
-  chisel
   corkscrew
   hans
+  chisel
   httptunnel
   iodine
   sish
+  sshuttle
   stunnel
   udptunnel
   wstunnel
