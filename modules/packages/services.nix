@@ -40,6 +40,7 @@ with pkgs; [
   sshchecker
   ssh-audit
   ssh-mitm
+  sshpass
 
   # IDS/IPS/WAF
   teler

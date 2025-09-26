@@ -7,15 +7,18 @@ with pkgs; [
   conpass
   crunch
   h8mail
-  hashcat
+  (hashcat.override {rocmSupport = true;})
   hashcat-utils
   hashdeep
   john
+  keepassxc
+  keepassxc-go
   legba
   medusa
   nasty
   ncrack
   nth
+  oath-toolkit
   phrasendrescher
   # python314Packages.patator (don't build)
   thc-hydra

@@ -43,7 +43,7 @@
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs;
             [
-              zellij
+              httpx
               jq
               ripgrep
               skim
