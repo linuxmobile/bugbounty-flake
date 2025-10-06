@@ -26,6 +26,7 @@ with pkgs; [
   nbtscanner
   offensive-azure
   powerview
+  krb5
   pre2k
   # python314Packages.lsassy (don't build)
   # python314Packages.pypykatz (check later)

@@ -10,6 +10,7 @@ with pkgs; [
   (hashcat.override {rocmSupport = true;})
   hashcat-utils
   hashdeep
+  hashid
   john
   keepassxc
   keepassxc-go

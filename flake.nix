@@ -64,8 +64,8 @@
             export WORDLISTS="${pkgs.wordlists}/share/wordlists"
             export DIRBUSTER="${pkgs.dirbuster}/share/dirbuster"
             export SECLISTS="${pkgs.seclists}/share/wordlists/seclists"
-            export MEDIUM="${pkgs.seclists}/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt"
-            export SMALL="${pkgs.seclists}/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt"
+            export MEDIUM="${pkgs.seclists}/share/wordlists/seclists/Discovery/Web-Content/raft-medium-directories.txt"
+            export SMALL="${pkgs.seclists}/share/wordlists/seclists/Discovery/Web-Content/raft-small-directories.txt"
             export API="${pkgs.seclists}/share/wordlists/seclists/Discovery/Web-Content/api/api-endpoints-res.txt"
             export ROCKYOU="${pkgs.wordlists}/share/wordlists/rockyou.txt"
           '';
