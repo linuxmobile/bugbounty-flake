@@ -3,14 +3,14 @@
 with pkgs; [
   adidnsdump
   adreaper
-  autobloody
+  # autobloody
   azurehound
   bloodhound-py
   breads-ad
-  chainsaw
   certi
   certipy
   certsync
+  chainsaw
   coercer
   donpapi
   enum4linux
@@ -21,18 +21,20 @@ with pkgs; [
   gomapenum
   kerbrute
   knowsmore
+  krb5
   lil-pwny
   nbtscan
   nbtscanner
   offensive-azure
+  openldap
   powerview
-  krb5
   pre2k
   # python314Packages.lsassy (don't build)
   # python314Packages.pypykatz (check later)
   rdwatool
   samba
   sccmhunter
+  smbclient-ng
   smbmap
   smbscan
 ]

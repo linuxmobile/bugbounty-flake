@@ -5,39 +5,40 @@ with pkgs; [
   clamav
   curl
   cyberchef
+  dnsutils # dig, nslookup
   dorkscout
   easyeasm
   exiflooter
+  file
+  findutils
   flashrom
   girsh
   gtfocli
+  helix
+  htop
   httpie
   # hurl (isn't building)
   inetutils
   inxi
   iproute2
+  iputils # ping, traceroute, arping, etc.
   iw
+  less
+  lsof
   lynx
   macchanger
-  helix
+  net-tools # ifconfig, netstat, route, etc.
+  openssl
   parted
+  procps # ps, top, free, etc.
   pwgen
   ronin
   spyre
+  strace
   utillinux
   wget
-  xh
-  iputils # ping, traceroute, arping, etc.
-  procps # ps, top, free, etc.
-  htop
-  lsof
-  strace
   which
-  file
-  less
-  findutils
-  net-tools # ifconfig, netstat, route, etc.
-  dnsutils # dig, nslookup
+  xh
 
   # Monitoring
   btop
