@@ -3,10 +3,11 @@
 with pkgs; [
   adenum
   hekatomb
-  msldapdump
-  ldapmonitor
   ldapdomaindump
+  ldapmonitor
   ldapnomnom
   ldeep
+  msldapdump
+  openldap
   silenthound
 ]

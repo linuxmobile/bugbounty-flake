@@ -5,5 +5,5 @@ with pkgs; [
   bluewalker
   # python314Packages.bleak (check later)
   redfang
-  ubertooth
+  # ubertooth
 ]

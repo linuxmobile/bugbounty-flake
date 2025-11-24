@@ -28,6 +28,9 @@
           config = {
             allowUnfree = true;
             segger-jlink.acceptLicense = true;
+            permittedInsecurePackages = [
+              "mbedtls-2.28.10"
+            ];
           };
           overlays = [
             (final: prev: import ./pkgs {pkgs = prev;})

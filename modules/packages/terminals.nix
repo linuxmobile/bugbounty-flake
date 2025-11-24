@@ -1,7 +1,7 @@
 # Terminal tools
 {pkgs}:
 with pkgs; [
-  cutecom
+  # cutecom
   minicom
   picocom
   socat

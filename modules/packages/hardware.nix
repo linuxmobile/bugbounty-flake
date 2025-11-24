@@ -12,7 +12,7 @@ with pkgs; [
   packetry
   teensy-loader-cli
   termineter
-  tytools
+  # tytools
   # python314Packages.angr
   # python314Packages.angrop (check later)
   # python314Packages.can (check later)

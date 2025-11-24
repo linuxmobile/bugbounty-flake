@@ -70,9 +70,6 @@ with pkgs; [
   ipcalc
   netmask
 
-  # Terminal multiplexer
-  zellij
-
   # Archive tools
   cabextract
   p7zip
@@ -83,4 +80,5 @@ with pkgs; [
   python313Packages.pip
   python313Packages.impacket
   git
+  libfaketime
 ]
